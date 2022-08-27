@@ -1,0 +1,288 @@
+/* navigation bar style */
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body
+{
+    background-color:#00101b;
+    font-family: montserrat;
+}
+nav
+{
+    background:#00101b;
+    height: 80px;
+    width:100%;
+}
+label.logo
+{
+    color:rgb(60, 255, 0);
+    font-size: 35px;
+    line-height: 80px;
+    padding:0 100px;
+    font-weight: bold;
+}
+nav ul
+{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li
+{
+    display: inline-block;
+    line-height: 80px;
+    margin:0 10px;
+}
+nav ul li a
+{
+    color:rgb(60, 255, 0);
+    font-size: 17px;
+    text-transform: capitalize;
+    padding:10px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: .8s ease;
+}
+nav ul li a:hover
+{
+    background-color:rgb(43, 255, 0);
+    box-shadow: -6px 6px 3px rgb(44, 138, 44);
+    color:rgb(255, 255, 255);
+    padding:10px;
+    font-weight: 600;
+}
+.checkbtn
+{
+    font-size: 30px;
+    color:white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    line-height: 80px;
+    display:none;
+}
+
+/* navigation bar style end*/
+
+/*home page content*/
+.card{
+    display: none;
+}
+.home{
+    display: block;
+}
+.home{
+    height:100vh;
+}
+
+.home .content{
+    font-size: 1.5rem;
+    width: 50%;
+    float: left;
+}
+.home .intro{
+    position: absolute;
+    width: 48%;
+    height: 200px;
+    z-index: 15;
+    top: 50%;
+    margin: -60px 0 0 130px;
+}
+.home .content .intro .description {
+    line-height: 1.5;
+}
+.home .content .intro .description b{
+    color:rgb(54, 248, 80);
+}
+.home .content .intro h3,h1,.description{
+    color :rgb(250, 250, 250);
+}
+.home .content .intro span{
+    color:rgb(60, 255, 0);
+}
+
+.resume-btn {
+    margin-top: 30px;
+}
+.resume-btn a{
+    background-color: rgb(60, 255, 0);
+    width: 180px;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    color:#fff;
+    font-weight: bolder;
+    transition: all .5s;
+}
+.resume-btn a:hover{
+    color:rgb(60, 255, 0);
+    background-color: transparent;
+    border: 2px solid rgb(60, 255, 0);
+    box-shadow: -6px 6px 9px rgb(60, 255, 0);
+}
+
+.home .image{
+    width:50%;
+    float: right;
+    height: 100vh;
+}
+.home .image img{
+    width: 750px;
+    height: 50%;
+    position: absolute;
+    top:50%;
+    left:80%;
+    transform: translate(-50%,-50%);
+}
+
+/*home page content end*/
+
+
+/* Mobile responsive*/
+@media (max-width:952px)
+{
+    label.logo
+    {
+        font-size:30px;
+        padding-left: 50px;
+    }
+    nav ul li a
+    {
+        font-size:16px;
+    }
+}
+@media (max-width:858px)
+{
+    .card{
+        display: block;
+    }
+    .checkbtn
+    {
+        display:block;
+        position: relative;
+        top:auto;
+    }
+    ul
+    {
+        position: fixed;
+        width:100%;
+        height:100%;
+        background-color:#00101b;
+        top:80px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1000;
+    }
+    nav ul li
+    {
+        display: block;
+    }
+    nav ul li a
+    {
+        font-size: 20px;
+    }
+    nav ul li a:hover
+    {
+        background:rgb(43, 255, 0);
+    }
+    .showMenuBar{
+        left:0;
+    }
+    .image{
+        display: none;
+    }
+
+    /* card view for mobile view only*/
+    .bigscreen{
+        display: none;
+    }
+    .card{
+        position: relative;
+        width: calc(100% - 20px);
+        height: 550px;
+        margin:30px auto;
+        box-shadow: 0 0 10px rgba(255, 253, 253, 0.3);
+      }
+      .card-header{
+        background-image: url('/assets/1.jpg');
+        position: relative;
+        height: 220px;
+        background-size: cover;
+        background-position: top;
+      }
+      .card-header:after{
+        content:'';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #00101b, rgba(181,181,181, 0.1));
+      }
+      svg .polygon{
+        fill: #00101b;
+      }
+      .card-header-slanted-edge{
+        position: absolute;
+        bottom: -3px;
+        z-index: 1;
+        width: 100%;
+        right:0;
+        left:0;
+      }
+      .card-body{
+        color: rgb(60, 255, 0);;
+        text-align:center;
+        padding-left: 10px;
+      }
+      
+      .name{
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin: 0 auto;
+      }
+      
+      .job-title{
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: 5px;
+        color:rgb(54, 248, 80);
+      }
+      
+      .bio{
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 300;
+        margin: 10px auto;
+        line-height: 20px;
+      }
+      .resume-btn {
+        margin-top: 30px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .card .resume-btn a{
+        background-color: rgb(60, 255, 0);
+        width: 180px;
+        padding: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 25px;
+        color:#fff;
+        font-weight: bolder;
+        transition: all .5s;
+    }
+    .card .resume-btn a:hover{
+        color:rgb(60, 255, 0);
+        background-color: transparent;
+        border: 2px solid rgb(60, 255, 0);
+        box-shadow: -6px 6px 9px rgb(60, 255, 0);
+    }
+      
+}
