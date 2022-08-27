@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="https://code.jquery.com/jquery-3.6.1.js"
+                integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script src="/scripts/script.js"></script>
+        <title>Home</title>
+</head>
+
+<body>
+        <!-- Navigation bar-->
+        <nav>
+                <div class="checkbtn">
+                        <i class="fa fa-bars" onclick="menuBar()"></i>
+                </div>
+                <label class="logo"> Portfollio </label>
+                <ul class="menuOption">
+                        <li>
+                                <a href="#home" onclick="menuBar()">Home</a>
+                        </li>
+                        <li>
+                                <a href="#project" onclick="menuBar()">Project</a>
+                        </li>
+                        <li>
+                                <a href="#achievement" onclick="menuBar()">Achievement</a>
+                        </li>
+                        <li>
+                                <a href="#contact" onclick="menuBar()">Contact</a>
+                        </li>
+                </ul>
+        </nav>
+        <!-- end Navigation bar-->
+
+        <!-- Home section-->
+        <div class="home" id="home">
+                <div class="bigscreen">
+                        <div class="content">
+                                <div class="intro">
+                                        <h3>Hello there,</h3>
+                                        <br />
+                                        <h1>
+                                                I'M
+                                                <span>Yuvaraj (@Mr_3rr0r_501)</span>
+                                        </h1>
+                                        <div class="description">
+                                                <p>
+                                                        <b>Software developer</b> and <b>Bug bounty hunter.</b> I
+                                                        secured Zoom,zerocopter,N26 and more...
+                                                </p>
+                                        </div>
+                                        <div class="resume-btn">
+                                                <a id="resume-btn" href="#resume" onmouseenter="changeEye()"
+                                                        onmouseleave="changeEye()">Resume <i class="fa-solid"></i></a>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="image">
+                        <img src="/assets/1.png">
+                </div>
+
+                <!-- mobile view card item-->
+                <div class="card">
+                        <div class="card-header">
+                                <div class="card-header-slanted-edge">
+                                </div>
+                        </div>
+                        <div class="card-body">
+                                <h2 class="name">Yuvaraj</h2>
+                                <h3 class="aka-name">(@Mr_3rr0r_501)</h3>
+                                <h4 class="job-title">Software developer/Bug Hunter</h4>
+                                <div class="bio">I secured into Zoom, zerocopter, N26 and more...</div>
+                        </div>
+                        <div class="resume-btn">
+                                <a id="resume-btn" href="#resume" onmouseenter="changeEye()"
+                                        onmouseleave="changeEye()">Resume <i class="fa-solid"></i></a>
+                        </div>
+                </div>
+
+                <!-- Mobile view card item end-->
+
+        </div>
+        <!-- end Home section-->
+
+        <div class="project" id="project">
+                <div class="project"></div>
+        </div>
+</body>
+
+</html>
