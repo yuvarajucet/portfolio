@@ -275,6 +275,7 @@ nav ul li a:hover
     color:rgb(10, 248, 10);
 }
 .project .content ul li b{
+    line-height:2;
     color:rgb(10, 248, 10);
 }
 .project .content ul ul{
