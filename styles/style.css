@@ -8,6 +8,7 @@
 }
 body
 {
+    
     background-color:#00101b;
     font-family: montserrat;
 }
@@ -16,6 +17,7 @@ nav
     background:#00101b;
     height: 80px;
     width:100%;
+    z-index: 10000;
 }
 label.logo
 {
@@ -104,6 +106,9 @@ nav ul li a:hover
 .home .content .intro span{
     color:rgb(60, 255, 0);
 }
+.home .content .intro span:hover{
+    animation: glow 1s ease-in-out infinite alternate;
+}
 
 .resume-btn {
     margin-top: 30px;
@@ -125,25 +130,150 @@ nav ul li a:hover
     border: 2px solid rgb(60, 255, 0);
     box-shadow: -6px 6px 9px rgb(60, 255, 0);
 }
-
 .home .image{
     width:50%;
     float: right;
     height: 100vh;
 }
 .home .image img{
-    width: 750px;
-    height: 50%;
+    width:calc(100% - 70%);
+    height: calc(100% - 40%);
     position: absolute;
     top:50%;
     left:80%;
     transform: translate(-50%,-50%);
 }
 
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgb(54, 54, 54), 0 0 20px rgb(41, 41, 41), 0 0 30px #038b09, 0 0 40px #018617, 0 0 50px #009e22, 0 0 60px #33ff00, 0 0 70px #02ff0f;
+    }
+    
+    to {
+      text-shadow: 0 0 20px rgb(114, 114, 114), 0 0 30px #fa4141, 0 0 40px #f72525, 0 0 50px #d11515, 0 0 60px #ce0f0f, 0 0 70px #e41313, 0 0 80px #ff0000;
+    }
+}
+
 /*home page content end*/
 
+/*Project page*/
+.project{
+    height: 100vh;
+}
+.project .bigscreen h1{
+    color:rgb(60, 255, 0);
+    text-align: center;
+    font-size: 60px;
+}
+
+.line {
+    position: relative;
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.line::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(60, 255, 0);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width:50%;
+}
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color:#00101b;
+    border: 4px solid rgb(60, 255, 0);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+  
+.left {
+    left: 0;
+}
+.right {
+    left: 50%;
+}
+  
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid rgb(60, 255, 0);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgb(60, 255, 0);
+}
+  
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid rgb(60, 255, 0);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(60, 255, 0) transparent transparent;
+}
+  
+.right::after {
+    left: -16px;
+}
+  
+.project .left .content {
+    color: #fff;
+    padding: 20px 30px;
+    border:2px solid rgb(5, 255, 5);
+    background-color: #00101b;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: -10px 8px 4px rgb(2, 158, 2);
+    transition: all .5s;
+}
+.project .right .content {
+    color: #fff;
+    padding: 20px 30px;
+    border:2px solid rgb(5, 255, 5);
+    background-color: #00101b;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 10px 8px 4px rgb(2, 158, 2);
+    transition: all .5s;
+}
+  
+.project .left .content:hover{
+    color:#fff;
+    background-color: rgb(7, 185, 7);
+    box-shadow: none;
+}
+.project .right .content:hover{
+    color:#fff;
+    background-color: rgb(7, 185, 7);
+    box-shadow: none;
+}  
+/* project page end */
 
 /* Mobile responsive*/
+
 @media (max-width:952px)
 {
     label.logo
@@ -194,12 +324,15 @@ nav ul li a:hover
     .showMenuBar{
         left:0;
     }
+    .add-eye{
+        background-image: url('../assets/eye-solid.svg');
+    }
     .image{
         display: none;
     }
 
     /* card view for mobile view only*/
-    .bigscreen{
+    .home .bigscreen{
         display: none;
     }
     .card{
@@ -283,6 +416,38 @@ nav ul li a:hover
         background-color: transparent;
         border: 2px solid rgb(60, 255, 0);
         box-shadow: -6px 6px 9px rgb(60, 255, 0);
+    }
+
+    .project .bigscreen h1{
+        color:rgb(60, 255, 0);
+        text-align: left;
+    }
+
+    .line::after {
+        left: 31px;
+    }
+    .project .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .project .right .content{
+        box-shadow: none;
+    }
+    .project .left .content{
+        box-shadow: none;
+    }
+    .project .container::before {
+        left: 60px;
+        border: medium solid rgb(7, 185, 7);;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent rgb(7, 185, 7) transparent transparent;
+    }
+    .project .left::after, .right::after {
+        left: 15px;
+    }
+    .right {
+        left: 0%;
     }
       
 }
