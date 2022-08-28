@@ -275,7 +275,7 @@ nav ul li a:hover
     color:rgb(10, 248, 10);
 }
 .project .content ul li b{
-    line-height:2;
+    line-height: 2;
     color:rgb(10, 248, 10);
 }
 .project .content ul ul{
@@ -294,12 +294,15 @@ nav ul li a:hover
 {
     label.logo
     {
-        font-size:30px;
+        font-size:25px;
         padding-left: 50px;
     }
     nav ul li a
     {
         font-size:16px;
+    }
+    .project .bigscreen h1{
+        text-align: left;
     }
 }
 @media (max-width:858px)
@@ -435,6 +438,7 @@ nav ul li a:hover
     }
 
     .project .bigscreen h1{
+        font-size: 40px;
         color:rgb(60, 255, 0);
         text-align: left;
     }
