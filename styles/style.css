@@ -18,6 +18,9 @@ nav
     width:100%;
     z-index: 10000;
 }
+span:hover{
+    animation: glow 1s ease-in-out infinite alternate;
+}
 label.logo
 {
     color:rgb(60, 255, 0);
@@ -69,103 +72,7 @@ nav ul li a:hover
 
 /* navigation bar style end*/
 
-/*home page content*/
-.card{
-    display: none;
-}
-.home{
-    display: block;
-}
-.home{
-    height:100vh;
-}
-
-.home .content{
-    font-size: 1.5rem;
-    width: 50%;
-    float: left;
-}
-.home .intro{
-    position: absolute;
-    width: 48%;
-    height: 200px;
-    z-index: 15;
-    top: 50%;
-    margin: -60px 0 0 130px;
-}
-.home .content .intro .description {
-    line-height: 1.5;
-}
-.home .content .intro .description b{
-    color:rgb(54, 248, 80);
-}
-.home .content .intro h3,h1,.description{
-    color :rgb(250, 250, 250);
-}
-.home .content .intro span{
-    color:rgb(60, 255, 0);
-}
-.home .content .intro span:hover{
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
-.resume-btn {
-    margin-top: 30px;
-}
-.resume-btn a{
-    background-color: rgb(60, 255, 0);
-    width: 180px;
-    padding: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 25px;
-    color:#fff;
-    font-weight: bolder;
-    transition: all .5s;
-}
-.resume-btn a:hover{
-    color:rgb(60, 255, 0);
-    background-color: transparent;
-    border: 2px solid rgb(60, 255, 0);
-    box-shadow: -6px 6px 9px rgb(60, 255, 0);
-}
-.home .image{
-    width:50%;
-    float: right;
-    height: 100vh;
-}
-.home .image img{
-    width:calc(100% - 70%);
-    height: calc(100% - 40%);
-    position: absolute;
-    top:50%;
-    left:80%;
-    transform: translate(-50%,-50%);
-}
-
-
-@-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px rgb(54, 54, 54), 0 0 20px rgb(41, 41, 41), 0 0 30px #038b09, 0 0 40px #018617, 0 0 50px #009e22, 0 0 60px #33ff00, 0 0 70px #02ff0f;
-    }
-    
-    to {
-      text-shadow: 0 0 20px rgb(114, 114, 114), 0 0 30px #fa4141, 0 0 40px #f72525, 0 0 50px #d11515, 0 0 60px #ce0f0f, 0 0 70px #e41313, 0 0 80px #ff0000;
-    }
-}
-
-/*home page content end*/
-
-/*Project page*/
-.project{
-    height: 100vh;
-}
-.project .bigscreen h1{
-    color:rgb(60, 255, 0);
-    text-align: center;
-    font-size: 60px;
-}
-
+/*time line style*/
 .line {
     position: relative;
     max-width: auto;
@@ -238,55 +145,163 @@ nav ul li a:hover
     left: -16px;
 }
   
-.project .left .content {
+.left .content {
     color: #fff;
     padding: 20px 30px;
     border:2px solid rgb(5, 255, 5);
     background-color: #00101b;
     position: relative;
     border-radius: 6px;
+    transition: all .5s;
+}
+.right .content {
+    color: #fff;
+    padding: 20px 30px;
+    border:2px solid rgb(5, 255, 5);
+    background-color: #00101b;
+    position: relative;
+    border-radius: 6px;
+    transition: all .5s;
+}
+
+.left .content:hover{
+    color:#fff;
     box-shadow: -10px 8px 4px rgb(2, 158, 2);
-    transition: all .5s;
 }
-.project .right .content {
-    color: #fff;
-    padding: 20px 30px;
-    border:2px solid rgb(5, 255, 5);
-    background-color: #00101b;
-    position: relative;
-    border-radius: 6px;
+.right .content:hover{
+    color:#fff;
     box-shadow: 10px 8px 4px rgb(2, 158, 2);
-    transition: all .5s;
-}
-  
-.project .left .content:hover{
-    color:#fff;
-    box-shadow: none;
-}
-.project .right .content:hover{
-    color:#fff;
-    box-shadow: none;
 }  
 
-.project .content h2 a{
+.content h2 a{
     color:rgb(7, 185, 7);
 }
-.project .content p b{
+.content p b{
     color:rgb(10, 248, 10);
 }
-.project .content ul li b{
+.content ul li b{
     line-height: 2;
     color:rgb(10, 248, 10);
 }
-.project .content ul ul{
+.content ul ul{
     margin-left: 30px;
     list-style-type:disc;
 }
-.project .content h2 a:hover{
+.content h2 a:hover{
     color:rgb(10, 248, 10);
     cursor: pointer;
 }
+/*time line style end*/
+
+/*home page content*/
+.home .bigscreen h1{
+    color:rgb(60, 255, 0);
+    text-align: center;
+    font-size: 60px;
+}
+.home .left .content a{
+    color: #fff;
+}
+.home .right a span{
+    color :rgb(60, 255, 0);
+}
+.home .left .content a:hover{
+    cursor: auto;
+}
+.home .right .content a:hover{
+    cursor: auto;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgb(54, 54, 54), 0 0 20px rgb(41, 41, 41), 0 0 30px #038b09, 0 0 40px #018617, 0 0 50px #009e22, 0 0 60px #33ff00, 0 0 70px #02ff0f;
+    }
+    
+    to {
+      text-shadow: 0 0 20px rgb(114, 114, 114), 0 0 30px #fa4141, 0 0 40px #f72525, 0 0 50px #d11515, 0 0 60px #ce0f0f, 0 0 70px #e41313, 0 0 80px #ff0000;
+    }
+}
+
+/*home page end*/
+
+/*Project page*/
+.project{
+    height: auto;
+}
+.project .bigscreen h1{
+    color:rgb(60, 255, 0);
+    text-align: center;
+    font-size: 60px;
+}
+
 /* project page end */
+
+/*Achievement page*/
+.achievement{
+    height: auto;
+}
+.achievement .bigscreen h1{
+    color:rgb(60, 255, 0);
+    text-align: center;
+    font-size: 60px;
+}
+.achievement .right a span{
+    font-size: 18px;
+    color:#fff;
+}
+
+.achievement .left .content a{
+    color:#fff;
+}
+.achievement .right .content a{
+    color:rgb(60, 255, 0);
+}
+.achievement .right .content a:hover{
+    color:#00a208;
+}
+/*Achievement page end*/
+/* contact page */
+.contact{
+    height: auto;
+}
+.contact .bigscreen h1{
+    color:rgb(60, 255, 0);
+    text-align: center;
+    font-size: 60px;
+}
+.contact .bigscreen .left a{
+    color: #fff;
+}
+.contact .bigscreen .content input{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+    color:rgb(60, 255, 0);
+}
+.contact .bigscreen .content button{
+    width: 100%;
+    color:#02ff0f;
+    background-color: transparent;
+    border:2px solid rgb(60, 255, 0);
+    padding:20px;
+    transition: .5s ease;
+    font-size: 20px;
+    font-weight: 900;
+}
+.contact .bigscreen .content button:hover{
+    background-color: #02ff0f;
+    color:#fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.contact .bigscreen .content:hover{
+    box-shadow: none;
+}
+
+/* contact page end */
 
 /* Mobile responsive*/
 
@@ -294,22 +309,25 @@ nav ul li a:hover
 {
     label.logo
     {
-        font-size:25px;
+        font-size:40px;
         padding-left: 50px;
     }
     nav ul li a
     {
         font-size:16px;
     }
+    .home .bigscreen h1{
+        text-align: left;
+    }
     .project .bigscreen h1{
+        text-align: left;
+    }
+    .achievement .bigscreen h1{
         text-align: left;
     }
 }
 @media (max-width:858px)
 {
-    .card{
-        display: block;
-    }
     .checkbtn
     {
         display:block;
@@ -343,133 +361,63 @@ nav ul li a:hover
     .showMenuBar{
         left:0;
     }
-    .add-eye{
-        background-image: url('../assets/eye-solid.svg');
-    }
-    .image{
-        display: none;
-    }
-
-    /* card view for mobile view only*/
-    .home .bigscreen{
-        display: none;
-    }
-    .card{
-        position: relative;
-        width: calc(100% - 20px);
-        height: 550px;
-        margin:30px auto;
-        box-shadow: 0 0 10px rgba(255, 253, 253, 0.3);
-      }
-      .card-header{
-        background-image: url('../assets/1.jpg');
-        position: relative;
-        height: 220px;
-        background-size: cover;
-        background-position: top;
-      }
-      .card-header:after{
-        content:'';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to top, #00101b, rgba(181,181,181, 0.1));
-      }
-      svg .polygon{
-        fill: #00101b;
-      }
-      .card-header-slanted-edge{
-        position: absolute;
-        bottom: -3px;
-        z-index: 1;
-        width: 100%;
-        right:0;
-        left:0;
-      }
-      .card-body{
-        color: rgb(60, 255, 0);;
-        text-align:center;
-        padding-left: 10px;
-      }
-      
-      .name{
-        font-size: 30px;
-        font-weight: 600;
-        text-transform: capitalize;
-        margin: 0 auto;
-      }
-      
-      .job-title{
-        font-size: 20px;
-        font-weight: 300;
-        margin-top: 5px;
-        color:rgb(54, 248, 80);
-      }
-      
-      .bio{
-        font-size: 20px;
-        color: #ffffff;
-        font-weight: 300;
-        margin: 10px auto;
-        line-height: 20px;
-      }
-      .resume-btn {
-        margin-top: 30px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-    }
-    .card .resume-btn a{
-        background-color: rgb(60, 255, 0);
-        width: 180px;
-        padding: 15px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 25px;
-        color:#fff;
-        font-weight: bolder;
-        transition: all .5s;
-    }
-    .card .resume-btn a:hover{
+    .home .bigscreen h1{
+        font-size: 40px;
         color:rgb(60, 255, 0);
-        background-color: transparent;
-        border: 2px solid rgb(60, 255, 0);
-        box-shadow: -6px 6px 9px rgb(60, 255, 0);
+        text-align: left;
     }
-
+    .home .bigscreen .left a{
+        font-size: 26px;
+    }
+    .home .bigscreen .right a {
+        font-size: 20px;
+    }
     .project .bigscreen h1{
         font-size: 40px;
         color:rgb(60, 255, 0);
         text-align: left;
     }
-
+    
+    .achievement .bigscreen h1{
+        font-size: 40px;
+        color:rgb(60, 255, 0);
+        text-align: left;
+    }
+    .achievement .bigscreen .left a{
+        font-size: 26px;
+    }
+    .contact .bigscreen h1{
+        font-size: 40px;
+        color:rgb(60, 255, 0);
+        text-align: left;
+    }
     .line::after {
         left: 31px;
     }
-    .project .container {
+    .container {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
-    .project .right .content{
+    .right .content{
         box-shadow: none;
     }
-    .project .left .content{
+    .left .content{
         box-shadow: none;
     }
-    .project .container::before {
+    .container::before {
         left: 60px;
         border: medium solid rgb(7, 185, 7);;
         border-width: 10px 10px 10px 0;
         border-color: transparent rgb(7, 185, 7) transparent transparent;
     }
-    .project .left::after, .right::after {
+    .left::after, .right::after {
         left: 15px;
     }
     .right {
         left: 0%;
     }
-    .project .content ul{
+    .content ul{
         display: none;
     }
       
