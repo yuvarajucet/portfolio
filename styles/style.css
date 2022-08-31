@@ -197,7 +197,7 @@ nav ul li a:hover
 .home .bigscreen h1{
     color:rgb(60, 255, 0);
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
 }
 .home .left .content a{
     color: #fff;
@@ -231,7 +231,7 @@ nav ul li a:hover
 .project .bigscreen h1{
     color:rgb(60, 255, 0);
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 /* project page end */
@@ -243,7 +243,7 @@ nav ul li a:hover
 .achievement .bigscreen h1{
     color:rgb(60, 255, 0);
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
 }
 .achievement .right a span{
     font-size: 18px;
@@ -267,7 +267,7 @@ nav ul li a:hover
 .contact .bigscreen h1{
     color:rgb(60, 255, 0);
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
 }
 .contact .bigscreen .left a{
     color: #fff;
@@ -309,7 +309,7 @@ nav ul li a:hover
 {
     label.logo
     {
-        font-size:40px;
+        font-size:30px;
         padding-left: 50px;
     }
     nav ul li a
@@ -362,7 +362,7 @@ nav ul li a:hover
         left:0;
     }
     .home .bigscreen h1{
-        font-size: 40px;
+        font-size: 30px;
         color:rgb(60, 255, 0);
         text-align: left;
     }
@@ -373,13 +373,13 @@ nav ul li a:hover
         font-size: 20px;
     }
     .project .bigscreen h1{
-        font-size: 40px;
+        font-size: 30px;
         color:rgb(60, 255, 0);
         text-align: left;
     }
     
     .achievement .bigscreen h1{
-        font-size: 40px;
+        font-size: 30px;
         color:rgb(60, 255, 0);
         text-align: left;
     }
@@ -387,7 +387,7 @@ nav ul li a:hover
         font-size: 26px;
     }
     .contact .bigscreen h1{
-        font-size: 40px;
+        font-size: 30px;
         color:rgb(60, 255, 0);
         text-align: left;
     }
