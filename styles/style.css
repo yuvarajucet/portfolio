@@ -10,6 +10,9 @@ body
     background-color:#00101b;
     font-family: montserrat;
 }
+html{
+    scroll-behavior: smooth;
+}
 nav
 {
     list-style: none;
