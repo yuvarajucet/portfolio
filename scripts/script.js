@@ -17,27 +17,40 @@ function changeEye(){
 
 // form submit
 
+$(window).scroll(function() {
+    if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+        if($('.top').css('display') == 'none'){
+            $('.top').css('display','block');
+        }
+    } else{
+        if($('.top').css('display') == 'block'){
+            $('.top').css('display','none');
+        }
+    }
+ });
+
 function sendHi(){
-    alert('Not implemented yet!')
-    // var name = $('#name')[0].value;
-    // var email = $('#email')[0].value;
-    // var msg = $('#msg')[0].value;
-    // var userMessage = {'name':name,'email':email,'msg':msg};
+    var name = $('#name')[0].value;
+    var email = $('#email')[0].value;
+    var msg = $('#msg')[0].value;
+    var userData = {
+        "name":name,
+        "email":email,
+        "msg":msg
+    }
 
-    // $.ajax({
-    //     url:'',
-    //     method:'post',
-    //     data:userMessage,
-    //     headers:{
-    //         'access-control-allow-origin':'*',
-    //         'access-control-allow-credential':'true'
-    //     },
-    //     success:function(e){
-    //         alert('Thank you, I will contact you soon..');
-    //     },
-    //     error:function(e){
-    //         alert('sorry! something was wrong please try agian later!');
-    //     }
-    // });
-
-};
+    $.ajax({
+        url:'http://127.0.0.1:5000/support',
+        method:'POST',
+        data:JSON.stringify(userData),
+        headers:{
+            'content-type':'applicatin/json',
+            'access-control-allow-origin':'*',
+            'access-control-allow-credential':'true'
+        },
+    });
+    $('#name')[0].value = '';
+    $('#email')[0].value = '';
+    $('#msg')[0].value = '';
+    $('#sayHi').html('Sent');
+}
