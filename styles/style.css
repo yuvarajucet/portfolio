@@ -325,6 +325,9 @@ nav ul li a:hover
     .achievement .bigscreen h1{
         text-align: left;
     }
+    .achievement .bigscreen h1{
+        text-align: left;
+    }
 }
 @media (max-width:858px)
 {
