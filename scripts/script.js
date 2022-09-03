@@ -40,7 +40,7 @@ function sendHi(){
     }
 
     $.ajax({
-        url:'http://127.0.0.1:5000/support',
+        url:'http://support-chart.herokuapp.com/support',
         method:'POST',
         data:JSON.stringify(userData),
         headers:{
