@@ -51,13 +51,11 @@ function sendHi(){
             'access-control-allow-credential':'true'
         },
         success:function(data){
-            console.log(data);
             if(data.code == 200){
                 $('#sayHi').html('Sent!');
             }
         },
         error:function(data){
-            console.log(data);
             $('#sayHi').html('Failed!');
             $('#sayHi').css('color','red');
         }
