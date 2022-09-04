@@ -38,6 +38,8 @@ function sendHi(){
         "email":email,
         "msg":msg
     }
+    $('#sayHi').html('sending...');
+    $('#sayHi').attr('disabled',true);
 
     $.ajax({
         url:'https://support-chart.herokuapp.com/support',
@@ -48,9 +50,19 @@ function sendHi(){
             'access-control-allow-origin':'*',
             'access-control-allow-credential':'true'
         },
+        success:function(data){
+            console.log(data);
+            if(data.code == 200){
+                $('#sayHi').html('Sent!');
+            }
+        },
+        error:function(data){
+            console.log(data);
+            $('#sayHi').html('Failed!');
+            $('#sayHi').css('color','red');
+        }
     });
     $('#name')[0].value = '';
     $('#email')[0].value = '';
     $('#msg')[0].value = '';
-    $('#sayHi').html('Sent');
 }
