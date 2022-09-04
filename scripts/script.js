@@ -42,7 +42,7 @@ function sendHi(){
     $('#sayHi').attr('disabled',true);
 
     $.ajax({
-        url:'https://support-chart.herokuapp.com/support',
+        url:'https://yuvaraj1221.pythonanywhere.com/support',
         method:'POST',
         data:JSON.stringify(userData),
         headers:{
