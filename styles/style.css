@@ -5,13 +5,13 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body
 {
     background-color:#00101b;
     font-family: montserrat;
-}
-html{
-    scroll-behavior: smooth;
 }
 nav
 {
@@ -305,6 +305,70 @@ nav ul li a:hover
 }
 
 /* contact page end */
+
+
+/* back to top */
+html .top{
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+    position: fixed;
+    display: none;
+}
+.top .round{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    border-color: 1px solid gray;
+}
+.top .round a {
+    color: #00101b;
+}
+.top .round i{
+    font-size: 25px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/* back to top end */
+
+/* footer design */
+.footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:50px;
+    background-color: #02ff0f;
+    justify-content: center;
+    align-items: center;
+}
+.footer .icons{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+}
+.footer .icons i{
+    padding-right: 50px;
+}
+.footer .icons .fa-instagram{
+    color:rgb(228, 7, 143);
+}
+.footer .icons .fa-youtube{
+    color:red;
+}
+.footer .icons .fa-linkedin{
+    color:rgb(0, 153, 255);
+}
+.footer .icons .fa-facebook{
+    color:blue;
+}
+/* Footer design end */
 
 /* Mobile responsive*/
 
