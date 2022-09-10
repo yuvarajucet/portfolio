@@ -18,7 +18,7 @@ function changeEye() {
 // form submit
 
 $(window).scroll(function () {
-  if ($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     if ($(".top").css("display") == "none") {
       $(".top").css("display", "block");
     }
