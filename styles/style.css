@@ -345,6 +345,7 @@ html .top{
     background-color: #02ff0f;
     justify-content: center;
     align-items: center;
+    z-index: 10000;
 }
 .footer .icons{
     position: absolute;
@@ -394,6 +395,16 @@ html .top{
     }
     .contact .bigscreen h1{
         text-align: left;
+    }
+    .footer .icons{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        font-size: 35px;
+    }
+    .footer .icons i{
+        padding-right: 20px;
     }
 }
 @media (max-width:858px)
@@ -490,5 +501,14 @@ html .top{
     .content ul{
         display: none;
     }
-      
+    .footer .icons{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        font-size: 25px;
+    }
+    .footer .icons i{
+        padding-right: 20px;
+    }
 }
