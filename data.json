@@ -1,0 +1,140 @@
+{
+    "home":{
+        "title": "@Home",
+        "data": [
+            {
+                "question": "Name ?",
+                "answer": "Yuvaraj (@Mr_3rr0r_501)"
+            },
+            {
+                "question": "Who am i?",
+                "answer": "Software Developer / Bug bounty hunter"
+            },
+            {
+                "question": "What i done?",
+                "answer": "Secured into Zoom, Zerocopter, N26 and etc..."
+            }
+        ],
+        "isHaveMoreData": false
+    },
+    "project":{
+        "title": "@Projects",
+        "data": [
+            {
+                "header": "P-H-Y-Wifi",
+                "link": "https://github.com/yuvarajucet/P_H_Y-WIFI",
+                "description": "P-H-Y-Wifi is Shell script based tool.This tool will help to analyze and test the security of wireless network with the help of Aircrack-ng.",
+                "usedTechHeader": "Build with:",
+                "usedTech": ["shell","Aircrack-ng","Airodumb-ng"]
+            },
+            {
+                "header": "Local to Air",
+                "link": "https://github.com/yuvarajucet/Local-to-air",
+                "description": "This tool will help to share your local files to remote user with the help of ngrok tunneling.Also you can host your static or dynamic (PHP) websites with help of this tool. ",
+                "usedTechHeader": "Build with:",
+                "usedTech": ["shell","ngrok"]
+            },
+            {
+                "header": "Easy-Phishing",
+                "link": "https://github.com/yuvarajucet/easy-phishing",
+                "description": "Fake pages for Instagram,Twitter,Facebook and Gmail This tool is educational purpose.This tool available in (CLI/GUI) both mode.",
+                "usedTechHeader": "Build with:",
+                "usedTech": ["HTML","CSS","PHP","shell"]
+            },
+            {
+                "header": "Subdomain-Takeover",
+                "link": "https://github.com/yuvarajucet/subdomain-takeover",
+                "description": "This tool will help to find vulnerable subdomains (for subdomain takeover vulnerability) based on subdomain's response body.",
+                "usedTechHeader": "Build with:",
+                "usedTech": ["python"]
+            },
+            {
+                "header": "Utube-downloader",
+                "link": "https://github.com/yuvarajucet/utube-download",
+                "description": "Download your favorite youtube videos with this script!",
+                "usedTechHeader": "Build with:",
+                "usedTech": ["python"]
+            },
+            {
+                "header": "PY-CTF",
+                "link": "https://github.com/yuvarajucet/pyctf",
+                "description": "This game have some common real world vulnerability to exploit. Example : Stored-XSS,Account Takeover,Image Meta data extraction and etc...",
+                "usedTechHeader": "Build with:",
+                "usedTech": ["Flask","Python","HTML","CSS"]
+            },
+            {
+                "header": "ARP-Spoofing Detection and Prevension",
+                "link": "https://github.com/yuvarajucet/ARP-spoofing-detection",
+                "description": "ARP-Spoofing detection script having automated Detection and Prevension modules. It continuesly Monitering router's client Entry table and found ARP-Spoofing attack it automatically find attacker and kickout attacker form that network.",
+                "usedTechHeader": "Build with:",
+                "usedTech": ["Python","Aircrack-ng"]
+            }
+        ],
+        "isHaveMoreData": true
+    },
+    "Achievements":{
+        "title": "@Achievements",
+        "data": [
+            {
+                "header": "Thanked By | Hall of Fame",
+                "companyInfo":[
+                    {
+                        "companyName": "Replyify",
+                        "link": "https://hackerone.com/replyify/thanks",
+                        "position": "Top 7th by Hackerone"
+                    },
+                    {
+                        "companyName": "Top Echelon software",
+                        "link": "https://hackerone.com/top_echelon_software/thanks",
+                        "position": "Top 8th by Hackerone"
+                    },
+                    {
+                        "companyName": "Expression Engine",
+                        "link": "https://hackerone.com/expressionengine/thanks",
+                        "position": "Top 24th by Hackerone"
+                    },
+                    {
+                        "companyName": "Hindawi",
+                        "link": "https://www.hindawi.com/responsible-disclosure-policy/",
+                        "position": "by VDP"
+                    }
+                ]
+            },
+            {
+                "header": "Bug-Bounty",
+                "companyInfo":[
+                    {
+                        "companyName": "Zoom",
+                        "link": "#Achievements",
+                        "position": "by Hackerone"
+                    },
+                    {
+                        "companyName": "N26",
+                        "link": "#Achievements",
+                        "position": "by Hackerone"
+                    },
+                    {
+                        "companyName": "Zerocopter",
+                        "link": "#Achievements",
+                        "position": "by Zerocopter"
+                    },
+                    {
+                        "companyName": "stromnetz.berlin",
+                        "link": "#Achievements",
+                        "position": "by Zerocopter"
+                    },
+                    {
+                        "companyName": "Tyk.io",
+                        "link": "#Achievements",
+                        "position": "by Zerocopter"
+                    },
+                    {
+                        "companyName": "Routescanner.com",
+                        "link": "#Achievements",
+                        "position": "by Zerocopter"
+                    }
+                ]
+            }
+        ]
+    }
+}
