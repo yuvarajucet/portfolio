@@ -14,6 +14,7 @@
         <script src="https://code.jquery.com/jquery-3.6.1.js"
                 integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
         <script src="scripts/script.js"></script>
+        <script src="scripts/datahandler.js"></script>
         <title>Home</title>
 </head>
 
@@ -45,37 +46,7 @@
         <div class="home" id="home">
                 <div class="bigscreen">
                         <h1><span>@Home</span></h1>
-                        <div class="line">
-                                <div class="container left">
-                                        <div class="content">
-                                                <h2><a>Name ?</a></h2>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a><span>Yuvaraj (@Mr_3rr0r_501)</span></a></h2>
-                                        </div>
-                                </div>
-                                <div class="container left">
-                                        <div class="content">
-                                                <h2><a>Who I'm ?</a></h2>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a><span>Software Developer / Bug bounty hunter</span></a></h2>
-                                        </div>
-                                </div>
-                                <div class="container left">
-                                        <div class="content">
-                                                <h2><a>What i Done ?</a></h2>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a><span>Secured into Zoom, Zerocopter, N26 and etc...</span></a></h2>
-                                        </div>
-                                </div>
+                        <div id="homeSection" class="line">
                         </div>
                 </div>
         </div>
@@ -84,122 +55,7 @@
         <div class="project" id="project">
                 <div class="bigscreen">
                         <h1><span>@Projects</span></h1>
-                        <div class="line">
-                                <div class="container left">
-                                        <div class="content">
-                                                <h2><a href="https://github.com/yuvarajucet/P_H_Y-WIFI" target="_blank">P-H-Y-Wifi</a></h2>
-                                                <p>P-H-Y-Wifi is <b>Shell</b> script based tool.This tool will help to
-                                                        analyze and test the security of wireless network with the help
-                                                        of <b>Aircrack-ng</b>.</p>
-                                                <ul style="list-style: none;">
-                                                        <li><b>Build with:</b></li>
-                                                        <ul>
-                                                                <li>shell</li>
-                                                                <li>Aircrack-ng</li>
-                                                                <li>Airodumb-ng</li>
-                                                        </ul>
-                                                </ul>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a href="https://github.com/yuvarajucet/Local-to-air" target="_blank">Local to Air</a></h2>
-                                                <p>This tool will help to share your local files to remote user with the
-                                                        help of <b>ngrok</b> tunneling.Also you can host your static or
-                                                        dynamic (PHP) websites with help of this tool. </p>
-                                                <ul style="list-style: none;">
-                                                        <li><b>Build with:</b></li>
-                                                        <ul>
-                                                                <li>shell</li>
-                                                                <li>ngrok</li>
-                                                        </ul>
-                                                </ul>
-                                        </div>
-                                </div>
-                                <div class="container left">
-                                        <div class="content">
-                                                <h2><a href="https://github.com/yuvarajucet/easy-phishing" target="_blank">Easy-Phishing</a></h2>
-                                                <p>Fake Phishing pages for
-                                                        <b>Instagram</b>,<b>Twitter</b>,<b>Facebook</b> and <b>Gmail</b>
-                                                        This tool is educational purpose.This tool available in
-                                                        (CLI/GUI) both mode.</p>
-                                                <ul style="list-style: none;">
-                                                        <li><b>Build with:</b></li>
-                                                        <ul>
-                                                                <li>HTML</li>
-                                                                <li>CSS</li>
-                                                                <li>PHP</li>
-                                                                <li>shell</li>
-                                                        </ul>
-                                                </ul>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a href="https://github.com/yuvarajucet/subdomain-takeover" target="_blank">Subdomain-Takeover</a></h2>
-                                                <p>This tool will help to find vulnerable subdomains (for subdomain
-                                                        takeover vulnerability) based on subdomain's response body.</p>
-                                                <ul style="list-style: none;">
-                                                        <li><b>Build with:</b></li>
-                                                        <ul>
-                                                                <li>Python</li>
-                                                        </ul>
-                                                </ul>
-                                        </div>
-                                </div>
-                                <div class="container left">
-                                        <div class="content">
-                                                <h2><a href="https://github.com/yuvarajucet/utube-download" target="_blank">Utube-downloader</a> </h2>
-                                                <p>Download your favorite youtube videos with this script!</p>
-                                                <ul style="list-style: none;">
-                                                        <li><b>Build with:</b></li>
-                                                        <ul>
-                                                                <li>Python</li>
-                                                        </ul>
-                                                </ul>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a href="https://github.com/yuvarajucet/pyctf" target="_blank">PY-CTF</a></h2>
-                                                <p>This game have some common real world vulnerability to exploit.
-                                                        Example : <b>Stored-XSS</b>,<b>Account Takeover</b>,<b>Image
-                                                                Meta data extraction</b> and <b>etc...</b></p>
-                                                <ul style="list-style: none;">
-                                                        <li><b>Build with:</b></li>
-                                                        <ul>
-                                                                <li>Flask</li>
-                                                                <li>Python</li>
-                                                                <li>HTML</li>
-                                                                <li>CSS</li>
-                                                        </ul>
-                                                </ul>
-
-                                        </div>
-                                </div>
-                                <div class="container left">
-                                        <div class="content">
-                                                <h2><a href="https://github.com/yuvarajucet/ARP-spoofing-detection" target="_blank">ARP-Spoofing Detection and Prevension</a></h2>
-                                                <p>ARP-Spoofing detection script having automated Detection and
-                                                        Prevension modules. It continuesly Monitering router's client
-                                                        Entry table and found ARP-Spoofing attack it automatically find
-                                                        attacker and kickout attacker form that network.</p>
-                                                <ul style="list-style: none;">
-                                                        <li><b>Build with:</b></li>
-                                                        <ul>
-                                                                <li>Python</li>
-                                                                <li>Aircrack-ng</li>
-                                                        </ul>
-                                                </ul>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a href="">More comming soon...</a></h2>
-                                                <p>
-                                                </p>
-                                        </div>
-                                </div>
+                        <div id="projectSection" class="line">
                         </div>
                 </div>
         </div>
@@ -208,81 +64,7 @@
         <div class="achievement" id="achievement">
                 <div class="bigscreen">
                         <h1><span>@Achievements</span></h1>
-                        <div class="line">
-                                <div class="container left">
-                                        <div class="content">
-                                                <h2><a>Thanked By | Hall of Fame</a></h2>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a href="https://hackerone.com/replyify/thanks" target="_blank">Replyify -<span> Top
-                                                                7<sup>th</sup> by Hackerone</span></a></h2>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a href="https://hackerone.com/top_echelon_software/thanks" target="_blank">Top
-                                                                Echelon software -<span> Top 8<sup>th</sup> by Hackerone</span></a></h2>
-                                        </div> 
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a href="https://hackerone.com/expressionengine/thanks" target="_blank">Expression
-                                                                Engine - <span>Top 24<sup>th</sup> by Hackerone</span></a></h2>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a href="https://www.hindawi.com/responsible-disclosure-policy/" target="_blank">Hindawi <span>by VDP</span></a>
-                                                </h2>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a href="">More In-Progress...</a></h2>
-                                        </div>
-                                </div>
-                                <div class="container left">
-                                        <div class="content">
-                                                <h2><a>Bug-Bounty</a></h2>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a>Zoom <span>by Hackerone</span></a></h2>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a>N26 <span>by Hackerone</span></a></h2>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a>Zerocopter <span>by Zerocopter</span></a></h2>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a>stomets.berline <span>by Zerocopter</span></a></h2>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a>Tyk.io <span>by Zerocopter</span></a></h2>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a>Routescanner.com <span>by Zerocopter</span></a></h2>
-                                        </div>
-                                </div>
-                                <div class="container right">
-                                        <div class="content">
-                                                <h2><a href="">More In-Progress...</a></h2>
-                                        </div>
-                                </div>
+                        <div id="achivementSection" class="line">
                         </div>
                 </div>
         </div>

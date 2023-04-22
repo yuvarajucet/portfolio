@@ -1,6 +1,6 @@
 {
     "home":{
-        "title": "@Home",
+        "title": "Home",
         "data": [
             {
                 "question": "Name ?",
@@ -12,32 +12,32 @@
             },
             {
                 "question": "What i done?",
-                "answer": "Secured into Zoom, Zerocopter, N26 and etc..."
+                "answer": "Secured / Ethically hacked into Zoom, Zerocopter, N26 and etc..."
             }
         ],
         "isHaveMoreData": false
     },
     "project":{
-        "title": "@Projects",
+        "title": "Projects",
         "data": [
             {
                 "header": "P-H-Y-Wifi",
                 "link": "https://github.com/yuvarajucet/P_H_Y-WIFI",
-                "description": "P-H-Y-Wifi is Shell script based tool.This tool will help to analyze and test the security of wireless network with the help of Aircrack-ng.",
+                "description": "P-H-Y-Wifi is <b>Shell</b> script based tool.This tool will help to analyze and test the security of wireless network with the help of <b>Aircrack-ng.</b>",
                 "usedTechHeader": "Build with:",
                 "usedTech": ["shell","Aircrack-ng","Airodumb-ng"]
             },
             {
                 "header": "Local to Air",
                 "link": "https://github.com/yuvarajucet/Local-to-air",
-                "description": "This tool will help to share your local files to remote user with the help of ngrok tunneling.Also you can host your static or dynamic (PHP) websites with help of this tool. ",
+                "description": "This tool will help to share your local files to remote user with the help of <b>ngrok</b> tunneling.Also you can host your static or dynamic (PHP) websites with help of this tool. ",
                 "usedTechHeader": "Build with:",
                 "usedTech": ["shell","ngrok"]
             },
             {
                 "header": "Easy-Phishing",
                 "link": "https://github.com/yuvarajucet/easy-phishing",
-                "description": "Fake pages for Instagram,Twitter,Facebook and Gmail This tool is educational purpose.This tool available in (CLI/GUI) both mode.",
+                "description": "Fake pages for <b>Instagram,Twitter,Facebook</b> and Gmail This tool is educational purpose.This tool available in (CLI/GUI) both mode.",
                 "usedTechHeader": "Build with:",
                 "usedTech": ["HTML","CSS","PHP","shell"]
             },
@@ -58,7 +58,7 @@
             {
                 "header": "PY-CTF",
                 "link": "https://github.com/yuvarajucet/pyctf",
-                "description": "This game have some common real world vulnerability to exploit. Example : Stored-XSS,Account Takeover,Image Meta data extraction and etc...",
+                "description": "This game have some common real world vulnerability to exploit. Example : <b>Stored-XSS,Account Takeover,Image Meta data extraction</b> and <b>etc...</b>",
                 "usedTechHeader": "Build with:",
                 "usedTech": ["Flask","Python","HTML","CSS"]
             },
@@ -72,8 +72,8 @@
         ],
         "isHaveMoreData": true
     },
-    "Achievements":{
-        "title": "@Achievements",
+    "achievements":{
+        "title": "Achievements",
         "data": [
             {
                 "header": "Thanked By | Hall of Fame",
@@ -81,22 +81,28 @@
                     {
                         "companyName": "Replyify",
                         "link": "https://hackerone.com/replyify/thanks",
-                        "position": "Top 7th by Hackerone"
+                        "position": "Top 7<sup>th</sup> by Hackerone"
                     },
                     {
                         "companyName": "Top Echelon software",
                         "link": "https://hackerone.com/top_echelon_software/thanks",
-                        "position": "Top 8th by Hackerone"
+                        "position": "Top 8<sup>th</sup> by Hackerone"
                     },
                     {
                         "companyName": "Expression Engine",
                         "link": "https://hackerone.com/expressionengine/thanks",
-                        "position": "Top 24th by Hackerone"
+                        "position": "Top 24<sup>th</sup> by Hackerone"
                     },
                     {
                         "companyName": "Hindawi",
                         "link": "https://www.hindawi.com/responsible-disclosure-policy/",
                         "position": "by VDP"
+                    },
+                    {
+                        "companyName": "More In-Progress...",
+                        "link":"#Achievements",
+                        "position":""
+
                     }
                 ]
             },
@@ -132,6 +138,11 @@
                         "companyName": "Routescanner.com",
                         "link": "#Achievements",
                         "position": "by Zerocopter"
+                    },
+                    {
+                        "companyName": "More In-Progress...",
+                        "link": "#Achievements",
+                        "position": ""
                     }
                 ]
             }
