@@ -96,7 +96,7 @@
                     {
                         "companyName": "Hindawi",
                         "link": "https://www.hindawi.com/responsible-disclosure-policy/",
-                        "position": "by VDP"
+                        "position": "by RDP"
                     },
                     {
                         "companyName": "More In-Progress...",
@@ -138,6 +138,11 @@
                         "companyName": "Routescanner.com",
                         "link": "#Achievements",
                         "position": "by Zerocopter"
+                    },
+                    {
+                        "companyName": "Syncfusion",
+                        "link": "#Achievements",
+                        "position": "by RDP"
                     },
                     {
                         "companyName": "More In-Progress...",
