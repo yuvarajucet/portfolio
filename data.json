@@ -72,7 +72,7 @@
             {
                 "header": "Bookmarker API",
                 "link" : "https://github.com/yuvarajucet/bookmark-api",
-                "description": "Bookmarker API used to store your favourite URL's or websites by creating user account on it. Users validated based on JWT authorization tokens on request headers."
+                "description": "Bookmarker API used to store your favourite URL's or websites by creating user account on it. Users validated based on JWT authorization tokens on request headers.",
                 "usedTechHeader": "Build with:",
                 "usedTech": ["Python", "JWT", "Fast-API"]
             }
