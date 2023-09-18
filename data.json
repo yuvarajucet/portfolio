@@ -68,6 +68,13 @@
                 "description": "ARP-Spoofing detection script having automated Detection and Prevension modules. It continuesly Monitering router's client Entry table and found ARP-Spoofing attack it automatically find attacker and kickout attacker form that network.",
                 "usedTechHeader": "Build with:",
                 "usedTech": ["Python","Aircrack-ng"]
+            },
+            {
+                "header": "Bookmarker API",
+                "link" : "https://github.com/yuvarajucet/bookmark-api",
+                "description": "Bookmarker API used to store your favourite URL's or websites by creating user account on it. Users validated based on JWT authorization tokens on request headers."
+                "usedTechHeader": "Build with:",
+                "usedTech": ["Python", "JWT", "Fast-API"]
             }
         ],
         "isHaveMoreData": true
