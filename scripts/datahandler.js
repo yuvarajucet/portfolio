@@ -112,6 +112,5 @@ function getTargetType(args){
 }
 
 function getPositionInfo(args){
-    debugger
     return (args.position === undefined || args.position === "" || args.position === null)  ? "" : "- " +args.position;
 }
