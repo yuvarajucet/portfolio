@@ -63,7 +63,7 @@
                 "usedTech": ["Flask","Python","HTML","CSS"]
             },
             {
-                "header": "ARP-Spoofing Detection and Prevension",
+                "header": "ARP-Spoofing Detection and Prevention",
                 "link": "https://github.com/yuvarajucet/ARP-spoofing-detection",
                 "description": "ARP-Spoofing detection script having automated Detection and Prevension modules. It continuesly Monitering router's client Entry table and found ARP-Spoofing attack it automatically find attacker and kickout attacker form that network.",
                 "usedTechHeader": "Build with:",
